@@ -1,0 +1,11 @@
+<p>products works!</p>
+<div *ngFor="let product of listProducts; let i=index">
+    <div *ngIf="product.title==nameOfProduct || nameOfProduct==''">
+{{product.id}}
+{{product.title}}
+{{product.price}}
+{{product.like}}
+<input type="submit" value="like" (click)="increaseLike(i)">
+</div>
+</div>
+<input type="text" [(ngModel)]="nameOfProduct">

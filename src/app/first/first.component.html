@@ -1,0 +1,9 @@
+<h1>bonjour {{klass |lowercase}}</h1>
+<hr>
+<input type="submit" (click)="sayHello()" value="hello">
+<div [style.backgroundColor]="kolor">
+    test
+</div>
+<input type="text" [(ngModel)]="kolor">
+<input type="text" #t>
+<input type="submit" (click)="changeColor(t.value)">
