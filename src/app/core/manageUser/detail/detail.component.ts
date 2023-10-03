@@ -10,8 +10,9 @@ export class DetailComponent implements OnInit {
 constructor(private activatedroute:ActivatedRoute){
 }
 ngOnInit(){
+  console.log(this.activatedroute.snapshot.queryParams['classe'])
 console.log(this.activatedroute.snapshot.params['id'])
-console.log(this.activatedroute.snapshot.params['name'])
+//console.log(this.activatedroute.snapshot.params['name'])
 this.activatedroute.params.subscribe(
   (d)=>console.log(d)
 );

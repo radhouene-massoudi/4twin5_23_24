@@ -1,5 +1,6 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Product } from '../model/product';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -7,6 +8,7 @@ import { Product } from '../model/product';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit, OnChanges {
+
   nameOfProduct='';
   listProducts:Product[]=[
     {id: 1, title: "T-shirt 1", price: 18, quantity: 10, like: 0},
@@ -17,7 +19,7 @@ export class ProductsComponent implements OnInit, OnChanges {
 //let index=this.listProducts.indexOf(p);
 this.listProducts[p].like++;
     }
-    constructor(){
+    constructor(private router:Router){
 
     }
     ngOnInit(): void {
@@ -26,5 +28,7 @@ this.listProducts[p].like++;
     ngOnChanges(changes: SimpleChanges): void {
         
     }
-    
+    goTocomponentDetail(idofproduct:any){
+this.router.navigate(['user/detail/',idofproduct])
+    }
 }

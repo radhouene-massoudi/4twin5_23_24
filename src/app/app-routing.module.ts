@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:'p',component:ProductsComponent},
   {path:'f',component:FirstComponent},
   {path:'user',component:ShowUserComponent, children:[
-    {path:'detail/:id/:name',component:DetailComponent},
+    {path:'detail/:id',component:DetailComponent},
   {path:'delete/:id',component:DeleteUserComponent},
   {path:'edit/:id',component:UpdateUserComponent},
   ]},

@@ -6,7 +6,9 @@
             {{product.title}}
             {{product.price}}
             {{product.like}}
-            <input type="submit" value="like" (click)="increaseLike(i)">
+            <input type="submit" value="like" (click)="goTocomponentDetail(product.id)">
+        <a routerLink="/user/detail/{{product.id}}">detail</a>
+        <a [routerLink]="['/user/detail/',product.id]">detail 2</a>
         </div>
   
     
