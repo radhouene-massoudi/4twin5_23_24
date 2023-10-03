@@ -1,11 +1,17 @@
 <p>products works!</p>
 <div *ngFor="let product of listProducts; let i=index">
-    <div *ngIf="product.title==nameOfProduct || nameOfProduct==''">
-{{product.id}}
-{{product.title}}
-{{product.price}}
-{{product.like}}
-<input type="submit" value="like" (click)="increaseLike(i)">
+   
+        <div *ngIf=" product.title==nameOfProduct || nameOfProduct==''" [ngStyle]="{'backgroundColor':product.quantity>20?'red':'blue'}">
+            {{product.id}}
+            {{product.title}}
+            {{product.price}}
+            {{product.like}}
+            <input type="submit" value="like" (click)="increaseLike(i)">
+        </div>
+  
+    
+    
 </div>
-</div>
-<input type="text" [(ngModel)]="nameOfProduct">
+<input type="text" [(ngModel)]="nameOfProduct" appChangeColor>
+
+<div appChangeColor class="container">lgdlgdgkjdfg</div>
