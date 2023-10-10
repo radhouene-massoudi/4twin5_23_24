@@ -10,17 +10,13 @@ import { DeleteUserComponent } from './core/manageUser/delete-user/delete-user.c
 import { UpdateUserComponent } from './core/manageUser/update-user/update-user.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'login',pathMatch:'full'},
+  //{path:'',redirectTo:'login',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'p',component:ProductsComponent},
   {path:'f',component:FirstComponent},
-  {path:'user',component:ShowUserComponent, children:[
-    {path:'detail/:id',component:DetailComponent},
-  {path:'delete/:id',component:DeleteUserComponent},
-  {path:'edit/:id',component:UpdateUserComponent},
-  ]},
+  {path:'lazy',loadChildren:()=>import('../app/core/manageUser/users/users.module').then((m)=>m.UsersModule)},
+  {path:'product',loadChildren:()=>import('../app/core/manage-product/manage-product.module').then((m)=>m.ManageProductModule)},
 
-  
 
 
   {path:'**',component:NotfoundComponent},
