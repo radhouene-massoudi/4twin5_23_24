@@ -1,0 +1,6 @@
+<p>invoice-list works!</p>
+<div *ngFor="let invoice of invoices">
+ facture: {{invoice.idFacture}}
+<a routerLink="/detail/{{invoice.idFacture}}/{{invoice.active}}">details </a>
+  <a routerLink="/invoice" [queryParams]="{id:invoice.idFacture,etat:invoice.active}">details invoice </a>
+</div>

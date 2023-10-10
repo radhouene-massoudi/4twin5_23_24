@@ -13,6 +13,10 @@ import { NavComponent } from './shared/nav/nav.component';
 import { DetailComponent } from './core/manageUser/detail/detail.component';
 import {UsersModule} from "./core/manageUser/users/users.module";
 import { ManageProductModule } from './core/manage-product/manage-product.module';
+import { MainInvoiceComponent } from './Atelier3/main-invoice/main-invoice.component';
+import { InvoiceListComponent } from './Atelier3/invoice-list/invoice-list.component';
+import { InvoiceComponent } from './Atelier3/invoice/invoice.component';
+import { DetailtwoComponent } from './Atelier3/detailtwo/detailtwo.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +28,10 @@ import { ManageProductModule } from './core/manage-product/manage-product.module
     LoginComponent,
     NavComponent,
     DetailComponent,
+    MainInvoiceComponent,
+    InvoiceListComponent,
+    InvoiceComponent,
+    DetailtwoComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<div *ngFor="let invoice of invoices">
+
+<div *ngIf="invoice.idFacture==id && invoice.active==true">
+    {{invoice.idFacture}}
+    {{invoice.dateFacture}}
+    {{invoice.montantRemise}}
+
+</div>
+  <div *ngIf=" invoice.idFacture==id && invoice.active==false">
+
+    Impossible de visualiser les détails
+    de la facture
+  </div>
+</div>
