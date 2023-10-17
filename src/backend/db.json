@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "surname": "typicode",
+      "adresse":"tunis",
+      "age":66
+    },
+    {
+      "id": 2,
+      "name": "med",
+      "surname": "med",
+      "adresse":"tunis",
+      "age":66
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ]
+}

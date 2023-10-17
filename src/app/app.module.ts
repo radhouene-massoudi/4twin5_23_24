@@ -17,7 +17,9 @@ import { MainInvoiceComponent } from './Atelier3/main-invoice/main-invoice.compo
 import { InvoiceListComponent } from './Atelier3/invoice-list/invoice-list.component';
 import { InvoiceComponent } from './Atelier3/invoice/invoice.component';
 import { DetailtwoComponent } from './Atelier3/detailtwo/detailtwo.component';
-
+import { C1Component } from './cours/c1/c1.component';
+import { C2Component } from './cours/c2/c2.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,13 +34,16 @@ import { DetailtwoComponent } from './Atelier3/detailtwo/detailtwo.component';
     InvoiceListComponent,
     InvoiceComponent,
     DetailtwoComponent,
+    C1Component,
+    C2Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     UsersModule,
-    ManageProductModule
+    ManageProductModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

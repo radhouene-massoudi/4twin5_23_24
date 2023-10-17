@@ -11,6 +11,8 @@ import { UpdateUserComponent } from './core/manageUser/update-user/update-user.c
 import {MainInvoiceComponent} from "./Atelier3/main-invoice/main-invoice.component";
 import {InvoiceComponent} from "./Atelier3/invoice/invoice.component";
 import {DetailtwoComponent} from "./Atelier3/detailtwo/detailtwo.component";
+import { C1Component } from './cours/c1/c1.component';
+import { C2Component } from './cours/c2/c2.component';
 
 const routes: Routes = [
   //{path:'',redirectTo:'login',pathMatch:'full'},
@@ -19,7 +21,8 @@ const routes: Routes = [
   {path:'p',component:ProductsComponent},
   {path:'detail/:id/:etat',component:InvoiceComponent},
   {path:'invoice',component:DetailtwoComponent},
-
+  {path:'c1',component:C1Component},
+  {path:'c2',component:C2Component},
   {path:'f',component:FirstComponent},
   {path:'lazy',loadChildren:()=>import('../app/core/manageUser/users/users.module').then((m)=>m.UsersModule)},
   {path:'product',loadChildren:()=>import('../app/core/manage-product/manage-product.module').then((m)=>m.ManageProductModule)},
