@@ -6,7 +6,9 @@ import {DeleteUserComponent} from "../delete-user/delete-user.component";
 import {UpdateUserComponent} from "../update-user/update-user.component";
 
 const routes: Routes = [
-  {path:'user',component:ShowUserComponent, children:[
+
+  {path:'user', children:[
+      {path:'',component:ShowUserComponent},
       {path:'detail/:id',component:DetailComponent},
       {path:'delete/:id',component:DeleteUserComponent},
       {path:'edit/:id',component:UpdateUserComponent},

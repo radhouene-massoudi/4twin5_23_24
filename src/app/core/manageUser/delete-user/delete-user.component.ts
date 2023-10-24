@@ -15,8 +15,7 @@ export class DeleteUserComponent implements  OnInit{
 ngOnInit(){
     this.userservice.removeUser(this.ac.snapshot.params['id']).subscribe(
       ()=>{
-       this.router.navigate(['/lazy/user'])
-        console.log('next')
+        this.router.navigate(['/lazy/user']);
       },
       (err)=>{
         //console.log('test',err.status)
@@ -27,7 +26,7 @@ ngOnInit(){
         }
       },
       ()=>{
-console.log('complete')
+//console.log('complete')
       }
     );
 }

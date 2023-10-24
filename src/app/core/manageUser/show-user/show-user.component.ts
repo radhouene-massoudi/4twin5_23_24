@@ -14,10 +14,10 @@ export class ShowUserComponent implements OnInit{
 ngOnInit(): void {
     this.s.getUsers().subscribe(
       (result)=>{
-       // console.log(result);
+        console.log(result);
        this.users=result
       }
     );
-   
+
 }
 }
