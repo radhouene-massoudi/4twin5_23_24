@@ -11,6 +11,20 @@
       "id": 2,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "title": "Sit mollit praesenti",
+      "price": 33,
+      "quantity": 690,
+      "like": 58,
+      "id": 3
+    },
+    {
+      "title": "Explicabo Et in ips",
+      "price": 663,
+      "quantity": 506,
+      "like": 46,
+      "id": 4
     }
   ]
 }
