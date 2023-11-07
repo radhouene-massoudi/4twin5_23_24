@@ -1,0 +1,32 @@
+<p>fromuser works!</p>
+<form [formGroup]="formUser">
+    <label>first Name</label>
+    <input type="text" formControlName="firstname">
+    <div *ngIf="formUser.get('firstname')?.invalid">
+        <div *ngIf="formUser.get('firstname')?.errors?.['required']">
+            required
+        </div>
+        <div *ngIf="formUser.get('firstname')?.errors?.['minlength']">
+            minlength
+        </div>
+        <div *ngIf="formUser.get('firstname')?.errors?.['pattern']">
+            pattern
+        </div>
+    </div>
+    <label>last Name</label>
+    <input type="text" formControlName="lastname">
+    <label>britday</label>
+    <input type="text" formControlName="brithday">
+    <label>email</label>
+    <input type="text" formControlName="email">
+    <label>pasword</label>
+    <input type="text" formControlName="pwd">
+    <label>profession</label>
+    <input type="text" formControlName="profession">
+    <label>customer category</label>
+    <input type="text" formControlName="customerCategory">
+    <div *ngIf="formUser.get('customerCategory')?.value!=='customer'">
+error
+    </div>
+    <input type="submit" value="save" [disabled]="!checkCategory()">
+</form>

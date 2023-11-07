@@ -21,6 +21,7 @@ import { C1Component } from './cours/c1/c1.component';
 import { C2Component } from './cours/c2/c2.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { FromuserComponent } from './fromuser/fromuser.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     C1Component,
     C2Component,
     ReactiveformComponent,
+    FromuserComponent,
   ],
   imports: [
     BrowserModule,

@@ -45,4 +45,10 @@ frombuil=this.fb.group({
 get skills(){
 return this.frombuil.get('skills') as FormArray
 }
+addElementToSkills(){
+  this.skills.push(new FormControl(''))
+}
+RemoveElementFromSkills(index:any){
+this.skills.removeAt(index);
+}
 }

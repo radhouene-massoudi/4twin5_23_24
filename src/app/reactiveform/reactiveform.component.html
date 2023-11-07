@@ -23,7 +23,9 @@ pwd:<input type="text" [formControl]="pwd">
     <input type="text" formControlName="pwdfb">
     <div *ngFor="let a of skills.controls;let i=index" formArrayName="skills">
         <input type="text" formControlName="{{i}}">
+        <input type="submit" value="-" (click)="RemoveElementFromSkills(i)">
     </div>
+    <input type="submit" (click)="addElementToSkills()" value="+">
     
     <input type="submit" value="save" (click)="showFg()" [disabled]="frombuil.invalid">
 </form>

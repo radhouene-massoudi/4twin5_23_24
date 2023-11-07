@@ -15,6 +15,7 @@ import { C1Component } from './cours/c1/c1.component';
 import { C2Component } from './cours/c2/c2.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { FromuserComponent } from './fromuser/fromuser.component';
 
 const routes: Routes = [
   //{path:'',redirectTo:'login',pathMatch:'full'},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:'detail/:id/:etat',component:InvoiceComponent},
   {path:'invoice',component:DetailtwoComponent},
   {path:'c1',component:C1Component},
+  {path:'userform',component:FromuserComponent},
   {path:'c2',component:C2Component},
   {path:'f',component:FirstComponent},
   {path:'reactive',component:ReactiveformComponent},
