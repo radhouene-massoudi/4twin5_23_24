@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductsComponent } from './products/products.component';
 import { ChangeColorDirective } from './change-color.directive';
 import { NotfoundComponent } from './shared/notfound/notfound.component';
@@ -20,6 +20,7 @@ import { DetailtwoComponent } from './Atelier3/detailtwo/detailtwo.component';
 import { C1Component } from './cours/c1/c1.component';
 import { C2Component } from './cours/c2/c2.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     DetailtwoComponent,
     C1Component,
     C2Component,
+    ReactiveformComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     UsersModule,
     ManageProductModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

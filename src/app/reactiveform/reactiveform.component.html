@@ -1,0 +1,29 @@
+log:<input type="text" [formControl]="login">
+pwd:<input type="text" [formControl]="pwd">
+<input type="submit" (click)="showLogin()">
+<hr>
+<h1> From Group</h1>
+<form [formGroup]="fg">
+    <label>login</label>
+    <input type="text" formControlName="loginfg">
+    <div *ngIf="loginfg.invalid">
+        <div *ngIf="loginfg?.errors?.['required']"> required</div>
+        <div *ngIf="loginfg?.errors?.['minlength']"> minlenght</div>
+    </div>
+    <label>pwd</label>
+    <input type="text" formControlName="pwdfg">
+    <input type="submit" value="save" (click)="showFg()" [disabled]="fg.invalid">
+</form>
+<hr>
+<h1> From builder</h1>
+<form [formGroup]="frombuil">
+    <label>login</label>
+    <input type="text" formControlName="loginfb">
+    <label>pwd</label>
+    <input type="text" formControlName="pwdfb">
+    <div *ngFor="let a of skills.controls;let i=index" formArrayName="skills">
+        <input type="text" formControlName="{{i}}">
+    </div>
+    
+    <input type="submit" value="save" (click)="showFg()" [disabled]="frombuil.invalid">
+</form>

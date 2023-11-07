@@ -13,6 +13,8 @@ import {InvoiceComponent} from "./Atelier3/invoice/invoice.component";
 import {DetailtwoComponent} from "./Atelier3/detailtwo/detailtwo.component";
 import { C1Component } from './cours/c1/c1.component';
 import { C2Component } from './cours/c2/c2.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 const routes: Routes = [
   //{path:'',redirectTo:'login',pathMatch:'full'},
@@ -24,6 +26,7 @@ const routes: Routes = [
   {path:'c1',component:C1Component},
   {path:'c2',component:C2Component},
   {path:'f',component:FirstComponent},
+  {path:'reactive',component:ReactiveformComponent},
   {path:'lazy',loadChildren:()=>import('../app/core/manageUser/users/users.module').then((m)=>m.UsersModule)},
   {path:'product',loadChildren:()=>import('../app/core/manage-product/manage-product.module').then((m)=>m.ManageProductModule)},
 
