@@ -1,0 +1,9 @@
+<p>list-product works!</p>
+<div *ngFor="let po of products">
+{{po.id}}
+{{po.title}}
+<input type="submit" value="update" (click)="showForm(po)">
+</div>
+<div *ngIf="Showupdate">
+<app-update-product [p]="producttoupdate" (sendmsg)="afterrecieveData($event)"></app-update-product>
+</div>

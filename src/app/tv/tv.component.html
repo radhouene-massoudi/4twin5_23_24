@@ -1,0 +1,4 @@
+<p>tv works!</p>
+<div *ngFor="let p of listProdcut">
+<app-showoneproduct [productin]="p" (msg)="traitement($event)"></app-showoneproduct>
+</div>

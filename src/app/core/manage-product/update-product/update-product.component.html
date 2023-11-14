@@ -1,0 +1,7 @@
+<form #f="ngForm">
+<label>id</label>
+<input type="number" name="id" [(ngModel)]="p.id" >
+<label>title</label>
+<input type="text"  name="title" [(ngModel)]="p.title">
+<input type="submit" value="save" (click)="sendDataToParent()">
+</form>

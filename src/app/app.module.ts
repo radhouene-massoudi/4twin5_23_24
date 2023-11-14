@@ -22,6 +22,9 @@ import { C2Component } from './cours/c2/c2.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { FromuserComponent } from './fromuser/fromuser.component';
+import { TvComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ShowoneproductComponent } from './showoneproduct/showoneproduct.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +43,9 @@ import { FromuserComponent } from './fromuser/fromuser.component';
     C2Component,
     ReactiveformComponent,
     FromuserComponent,
+    TvComponent,
+    MobileComponent,
+    ShowoneproductComponent,
   ],
   imports: [
     BrowserModule,
