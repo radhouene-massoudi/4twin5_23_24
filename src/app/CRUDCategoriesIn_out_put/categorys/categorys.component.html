@@ -1,0 +1,8 @@
+<p>categorys works!</p>
+<div *ngFor="let item of cats">
+{{item.id}}
+{{item.title}}
+{{item.description}}
+<input type="submit" value="update" (click)="showComponentForm(item)">
+</div>
+<app-update-category *ngIf="showFormUpdate" [categorytoUpdate]="cattoup"></app-update-category>

@@ -1,0 +1,9 @@
+<form #f="ngForm">
+<label>id</label>
+<input type="number" name="id" ngModel [(ngModel)]="categorytoUpdate.id">
+<label>title</label>
+<input type="text" name="title" ngModel [(ngModel)]="categorytoUpdate.title">
+<label>dessc</label>
+<input type="text" name="description" ngModel [(ngModel)]="categorytoUpdate.description">
+<input type="submit" value="update" (click)="Update(f.value)">
+</form>

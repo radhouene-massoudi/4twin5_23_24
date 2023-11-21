@@ -1,11 +1,12 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-showoneproduct',
   templateUrl: './showoneproduct.component.html',
   styleUrls: ['./showoneproduct.component.css']
 })
-export class ShowoneproductComponent {
+export class ShowoneproductComponent implements OnChanges {
+
 @Input()productin:any;
 @Output()msg=new EventEmitter();
 
@@ -13,5 +14,8 @@ export class ShowoneproductComponent {
 
 sendDataToParent(p:any){
 this.msg.emit(p)
+}
+ngOnChanges(changes: SimpleChanges): void {
+  console.log(changes)
 }
 }

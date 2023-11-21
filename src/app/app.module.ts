@@ -25,6 +25,13 @@ import { FromuserComponent } from './fromuser/fromuser.component';
 import { TvComponent } from './tv/tv.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { ShowoneproductComponent } from './showoneproduct/showoneproduct.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+import { AddCategoryComponent } from './CRUDCategoriesIn_out_put/add-category/add-category.component';
+import { UpdateCategoryComponent } from './CRUDCategoriesIn_out_put/update-category/update-category.component';
+import { CategorysComponent } from './CRUDCategoriesIn_out_put/categorys/categorys.component';
+import { DetailCategoyComponent } from './CRUDCategoriesIn_out_put/detail-categoy/detail-categoy.component';
+import { RemoveCategoyComponent } from './CRUDCategoriesIn_out_put/remove-categoy/remove-categoy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +53,13 @@ import { ShowoneproductComponent } from './showoneproduct/showoneproduct.compone
     TvComponent,
     MobileComponent,
     ShowoneproductComponent,
+    ChildComponent,
+    ParentComponent,
+    AddCategoryComponent,
+    UpdateCategoryComponent,
+    CategorysComponent,
+    DetailCategoyComponent,
+    RemoveCategoyComponent,
   ],
   imports: [
     BrowserModule,
