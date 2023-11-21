@@ -32,6 +32,7 @@ import { UpdateCategoryComponent } from './CRUDCategoriesIn_out_put/update-categ
 import { CategorysComponent } from './CRUDCategoriesIn_out_put/categorys/categorys.component';
 import { DetailCategoyComponent } from './CRUDCategoriesIn_out_put/detail-categoy/detail-categoy.component';
 import { RemoveCategoyComponent } from './CRUDCategoriesIn_out_put/remove-categoy/remove-categoy.component';
+import { ErrorComponent } from './CRUDCategoriesIn_out_put/error/error.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +61,7 @@ import { RemoveCategoyComponent } from './CRUDCategoriesIn_out_put/remove-catego
     CategorysComponent,
     DetailCategoyComponent,
     RemoveCategoyComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,

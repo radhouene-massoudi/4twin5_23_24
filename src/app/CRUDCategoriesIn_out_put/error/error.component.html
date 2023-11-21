@@ -1,0 +1,12 @@
+
+<div >
+    <div *ngIf="err.errors?.['required']">
+        required
+    </div>
+    <div *ngIf="err.errors?.['pattern']">
+        pattern
+    </div>
+    <div *ngIf="err.errors?.['minlength']">
+        minlength
+    </div>
+</div>

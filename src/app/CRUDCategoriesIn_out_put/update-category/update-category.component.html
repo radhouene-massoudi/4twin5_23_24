@@ -1,9 +1,12 @@
 <form #f="ngForm">
 <label>id</label>
-<input type="number" name="id" ngModel [(ngModel)]="categorytoUpdate.id">
+<input type="number" name="id" ngModel  >
 <label>title</label>
-<input type="text" name="title" ngModel [(ngModel)]="categorytoUpdate.title">
+<input type="text" name="title" ngModel  #t="ngModel" minlength="3" required>
+<div *ngIf="t.invalid">
+<app-error [err]="t"></app-error>
+</div>
 <label>dessc</label>
-<input type="text" name="description" ngModel [(ngModel)]="categorytoUpdate.description">
+<input type="text" name="description" ngModel >
 <input type="submit" value="update" (click)="Update(f.value)">
 </form>

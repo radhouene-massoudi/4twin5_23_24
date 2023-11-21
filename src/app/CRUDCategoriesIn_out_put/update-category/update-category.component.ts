@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CategoryService } from '../service/category.service';
 import { Category } from '../models/category';
 
@@ -9,13 +9,14 @@ import { Category } from '../models/category';
 })
 export class UpdateCategoryComponent {
 @Input()categorytoUpdate !:Category;
+@Output()notif=new EventEmitter();
   constructor(private s:CategoryService){
 
   }
   Update(f:any){
 this.s.updateCat(f,this.categorytoUpdate.id).subscribe(
   ()=>{
-    alert('updated')
+  this.notif.emit('updted');
   }
 );
 

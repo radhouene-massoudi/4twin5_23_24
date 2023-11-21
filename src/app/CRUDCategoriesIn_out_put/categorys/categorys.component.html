@@ -5,4 +5,4 @@
 {{item.description}}
 <input type="submit" value="update" (click)="showComponentForm(item)">
 </div>
-<app-update-category *ngIf="showFormUpdate" [categorytoUpdate]="cattoup"></app-update-category>
+<app-update-category *ngIf="showFormUpdate" [categorytoUpdate]="cattoup" (notif)="changeState()"></app-update-category>

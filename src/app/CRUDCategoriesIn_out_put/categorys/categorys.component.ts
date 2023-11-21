@@ -24,4 +24,7 @@ showComponentForm(cat:any){
   this.showFormUpdate=true;
   this.cattoup=cat;
 }
+changeState(){
+  this.showFormUpdate=false;
+}
 }
