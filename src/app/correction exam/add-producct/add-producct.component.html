@@ -1,0 +1,19 @@
+<form [formGroup]="addProductfrom">
+<label>name</label>
+<input type="text" formControlName="name">
+<div *ngIf="addProductfrom.get('name')?.invalid">
+    required
+</div>
+
+<label>price</label>
+<input type="text" formControlName="price">
+<div *ngIf="addProductfrom.get('price')?.invalid">
+    pattern
+</div>
+<label>description</label>
+<input type="text" formControlName="description">
+<div *ngIf="addProductfrom.get('description')?.invalid">
+    minlen
+</div>
+<input type="submit" value="save" [disabled]="addProductfrom.invalid" (click)="save()">
+</form>

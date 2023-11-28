@@ -1,0 +1,8 @@
+<p>home works!</p>
+<div *ngFor="let p of products">
+{{p.name}}
+{{p.price}}
+{{p.description}}
+<input type="submit" value="buy" (click)="addToCart(p)">
+<input type="submit" value="detail" (click)="navigateTODetail(p.id)">
+</div>

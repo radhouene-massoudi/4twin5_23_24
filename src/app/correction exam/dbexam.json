@@ -1,0 +1,24 @@
+{
+  "product": [
+    {
+      "name": "Ut voluptas earum en",
+      "price": "66",
+      "description": "Assumenda consequatu",
+      "id": 1
+    },
+    {
+      "name": "Exercitation illo ex",
+      "price": "88",
+      "description": "Voluptatem non nihil",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "Ut voluptas earum en",
+      "price": "66",
+      "description": "Assumenda consequatu",
+      "id": 1
+    }
+  ]
+}

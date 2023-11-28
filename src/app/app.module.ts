@@ -33,6 +33,10 @@ import { CategorysComponent } from './CRUDCategoriesIn_out_put/categorys/categor
 import { DetailCategoyComponent } from './CRUDCategoriesIn_out_put/detail-categoy/detail-categoy.component';
 import { RemoveCategoyComponent } from './CRUDCategoriesIn_out_put/remove-categoy/remove-categoy.component';
 import { ErrorComponent } from './CRUDCategoriesIn_out_put/error/error.component';
+import { AddProducctComponent } from './correction exam/add-producct/add-producct.component';
+  import { HomeComponent } from './correction exam/home/home.component';
+import { ShowShopingComponent } from './correction exam/show-shoping/show-shoping.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,9 +66,12 @@ import { ErrorComponent } from './CRUDCategoriesIn_out_put/error/error.component
     DetailCategoyComponent,
     RemoveCategoyComponent,
     ErrorComponent,
+    AddProducctComponent,
+    HomeComponent,
+    ShowShopingComponent,
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
     FormsModule,
     UsersModule,
